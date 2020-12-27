@@ -32,6 +32,7 @@
             editableElements.push(...doc.querySelectorAll("textarea"))
             editableElements.push(...doc.querySelectorAll("[contenteditable=true]"))
             editableElements.push(...doc.querySelectorAll("[type=text]"))
+            editableElements.push(...doc.querySelectorAll("[type=email]"))
     
         }
     

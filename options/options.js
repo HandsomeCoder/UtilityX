@@ -7,6 +7,16 @@
 
         loadAbbreviationsTable()
 
+        loadListners()
+
+    }
+
+    function loadListners(){
+        chrome.runtime.onMessage.addListener(function(request, sender, sendResponse){
+            if (request.todo == "CHANGE_IN_ABBREVIATIONS"){
+                loadAbbreviationsTable();
+            }
+        });
     }
 
     function loadAbbreviationsTable(){
