@@ -27,7 +27,7 @@
                                 var notifOptions = {
                                     type: "basic",
                                     title: "Added!",
-                                    iconUrl: "icon16.png",
+                                    iconUrl: "assets/16px.png",
                                     message: "Added! Abbreviation addded successfully"
                                 };
                                 chrome.notifications.create('limitNotif', notifOptions);
@@ -37,7 +37,7 @@
                             var notifOptions = {
                                 type: "basic",
                                 title: "Error",
-                                iconUrl: "icon16.png",
+                                iconUrl: "assets/16px.png",
                                 message: "Uh oh, Already have one abbreviation with this key"
                             };
                             chrome.notifications.create('limitNotif', notifOptions);

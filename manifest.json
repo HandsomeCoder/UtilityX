@@ -2,6 +2,11 @@
     "name": "UtilityX",
     "version": "1.0",
     "description": "Utility Extension",
+    "icons": {
+        "16": "assets/16px.png",
+        "48": "assets/48px.png",
+        "128": "assets/128px.png"
+      },
     "permissions": [
         "tabs",
         "contextMenus",
@@ -15,7 +20,8 @@
         "persistent": false
     },
     "browser_action": {
-        "default_popup": "popup/popup.html"
+        "default_popup": "popup/popup.html",
+        "default_icon": "assets/16px.png"
     },
     "content_scripts": [
         {

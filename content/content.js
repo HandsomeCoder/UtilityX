@@ -73,7 +73,7 @@
 
     function loadServices(){
         chrome.storage.sync.get("services", function (response) {
-            services = response.services;
+            services = response.services ? response.services : {};
         })
     }
 
