@@ -9,9 +9,9 @@
             changeStatusOfService("abbreviator", abbreviator.checked)
         }
 
-        loremipsum.onchange = function(){
-            changeStatusOfService("loremipsum", loremipsum.checked);
-        }
+        // loremipsum.onchange = function(){
+        //     changeStatusOfService("loremipsum", loremipsum.checked);
+        // }
 
         chrome.storage.sync.get("services", function (response) {
             let services = response.services ? response.services : {}

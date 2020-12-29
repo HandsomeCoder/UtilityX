@@ -50,14 +50,14 @@
         }
 
         for (let editableElement of editableElements) {
-            if (editableElement.nodeName == "INPUT") {
+            if (new Set(["INPUT", "TEXTAREA"]).has(editableElement.nodeName)) {
 
                 editableElement.addEventListener("keyup", listenerForAbbreviations);
                 editableElement.addEventListener("keyup", listenerForLoremipsum);
 
             } else if (new Set(["DIV", "P"]).has(editableElement.nodeName)) {
 
-                observerForAbbreviations();
+                observerForAbbreviations(editableElement);
 
             }
         }
@@ -100,7 +100,7 @@
         }
     }
 
-    function observerForAbbreviations() {
+    function observerForAbbreviations(editableElement) {
 
         let config = { childList: true, subtree: true, characterData: true };
 
