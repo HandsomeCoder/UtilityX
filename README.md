@@ -1,5 +1,4 @@
 ## **UtilityX is a chrome extension.**
-A suite of various utilities.
 
 **Abbreviation:**
 
