@@ -1,4 +1,3 @@
-
 ## **UtilityX is a chrome extension.**
   
 **Abbreviation:**
