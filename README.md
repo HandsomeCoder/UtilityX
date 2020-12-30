@@ -12,5 +12,4 @@
 	- Step 1: Firstly, we need to build our library of abbreviations. For that select, the phrase, right-click on it and select the "Add Abbreviation" menu from the context menu. Alternatively, you can also add/remove abbreviations from the option page
 	- Step 2: To use the phrase in your text, just type "equal to (=)" followed by the abbreviation. The utility will automatically replace the abbreviation with the mapped phrase.
 	
-**Demo:**
-YouTube Link: https://www.youtube.com/watch?v=2d_nrRR56dQ&t=4s
+**Demo:** https://www.youtube.com/watch?v=2d_nrRR56dQ&t=4s
