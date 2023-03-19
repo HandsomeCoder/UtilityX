@@ -1,38 +1,26 @@
 {
-    "name": "UtilityX",
-    "version": "1.0",
-    "description": "Utility Extension",
-    "icons": {
-        "16": "assets/16px.png",
-        "48": "assets/48px.png",
-        "128": "assets/128px.png"
-      },
-    "permissions": [
-        "tabs",
-        "contextMenus",
-        "notifications",
-        "storage"
-    ],
-    "background": {
-        "scripts": [
-            "background.js"
-        ],
-        "persistent": false
+  "name": "UtilityX",
+  "version": "1.0",
+  "description": "Utility Extension",
+
+  "permissions": ["tabs", "contextMenus", "notifications", "storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_icon": {
+      "16": "assets/16px.png",
+      "48": "assets/48px.png",
+      "128": "assets/128px.png"
     },
-    "browser_action": {
-        "default_popup": "popup/popup.html",
-        "default_icon": "assets/16px.png"
-    },
-    "content_scripts": [
-        {
-            "matches": [
-                "<all_urls>"
-            ],
-            "js": [
-                "content/content.js"
-            ]
-        }
-    ],
-    "options_page": "options/options.html",
-    "manifest_version": 2
+    "default_popup": "popup/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content/content.js"]
+    }
+  ],
+  "options_page": "options/options.html",
+  "manifest_version": 3
 }
