@@ -30,7 +30,7 @@
                                     iconUrl: "assets/16px.png",
                                     message: "Added! Abbreviation addded successfully"
                                 };
-                                chrome.notifications.create('limitNotif', notifOptions);
+                                chrome.notifications.create('ABBREVIATION_ADDED', notifOptions);
                             })
                         } else {
 
@@ -40,7 +40,7 @@
                                 iconUrl: "assets/16px.png",
                                 message: "Uh oh, Already have one abbreviation with this key"
                             };
-                            chrome.notifications.create('limitNotif', notifOptions);
+                            chrome.notifications.create('ABBREVIATION_ADDITION_FAILED', notifOptions);
                         }
                     });
             }

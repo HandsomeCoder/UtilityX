@@ -14,4 +14,4 @@
 	2. Right-click on the extensions and open Options page. You can also Add/Remove abbreviations from the option page.
 2. To use the phrase in your text, just type "equal to (=)" followed by the abbreviation. The utility will automatically replace the abbreviation with the mapped phrase.
 	
-### Demo: [Tutorial Video on Youtube](https://www.youtube.com/watch?v=2d_nrRR56dQ&t=4s)
+### Demo: [Tutorial Video on Youtube](https://www.youtube.com/watch?v=2d_nrRR56dQ)
